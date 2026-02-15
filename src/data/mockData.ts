@@ -34,4 +34,9 @@ export const mockRelatorioData = {
   tempoMedioEspera: 12, // minutos
   totalAtendimentos: 112,
   totalCancelados: 8,
+  estatisticasAtendentes: [
+    { id: "1", nome: "Maria Silva", atendimentos: 45, tempoMedio: 8 },
+    { id: "2", nome: "João Santos", atendimentos: 38, tempoMedio: 11 },
+    { id: "3", nome: "Ana Oliveira", atendimentos: 29, tempoMedio: 14 },
+  ],
 };
