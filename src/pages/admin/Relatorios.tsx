@@ -1,10 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { mockRelatorioData } from "@/data/mockData";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { Clock, Users, XCircle } from "lucide-react";
 
 const AdminRelatorios = () => {
-  const { atendimentosPorHora, tempoMedioEspera, totalAtendimentos, totalCancelados } = mockRelatorioData;
+  const { atendimentosPorHora, tempoMedioEspera, totalAtendimentos, totalCancelados, estatisticasAtendentes } = mockRelatorioData;
 
   return (
     <div className="space-y-6">
@@ -56,6 +57,32 @@ const AdminRelatorios = () => {
               </BarChart>
             </ResponsiveContainer>
           </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="font-display">Desempenho por Atendente</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Atendente</TableHead>
+                <TableHead className="text-center">Atendimentos</TableHead>
+                <TableHead className="text-center">Tempo Médio (min)</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {estatisticasAtendentes.map((a) => (
+                <TableRow key={a.id}>
+                  <TableCell className="font-medium">{a.nome}</TableCell>
+                  <TableCell className="text-center">{a.atendimentos}</TableCell>
+                  <TableCell className="text-center">{a.tempoMedio}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </CardContent>
       </Card>
     </div>
