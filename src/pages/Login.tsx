@@ -19,7 +19,7 @@ const Login = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      window.location.href = tab === "cliente" ? "/cliente-dashboard" : "/admin";
+      window.location.href = tab === "cliente" ? "/cliente" : "/admin";
     }, 1000);
   };
 
