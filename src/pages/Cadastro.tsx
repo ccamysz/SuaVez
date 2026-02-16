@@ -39,7 +39,7 @@ const Cadastro = () => {
     if (senhaCliente.length < 6) { setErro("A senha deve ter pelo menos 6 caracteres."); return; }
     if (senhaCliente !== confirmarSenhaCliente) { setErro("As senhas não coincidem."); return; }
     setLoading(true);
-    setTimeout(() => { setLoading(false); window.location.href = "/login"; }, 1000);
+    setTimeout(() => { setLoading(false); window.location.href = "/cliente"; }, 1000);
   };
 
   const handleEstabSubmit = (e: React.FormEvent) => {
@@ -68,9 +68,7 @@ const Cadastro = () => {
     return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
   };
 
-  const PasswordField = ({ id, value, onChange, placeholder = "Mínimo 6 caracteres" }: {
-    id: string; value: string; onChange: (v: string) => void; placeholder?: string;
-  }) => (
+  const renderPasswordField = (id: string, value: string, onChange: (v: string) => void, placeholder = "Mínimo 6 caracteres") => (
     <div className="relative">
       <Input id={id} type={showPassword ? "text" : "password"} placeholder={placeholder} value={value} onChange={(e) => onChange(e.target.value)} required autoComplete="new-password" />
       <button type="button" className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}>
@@ -122,7 +120,7 @@ const Cadastro = () => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="c-senha">Senha</Label>
-                    <PasswordField id="c-senha" value={senhaCliente} onChange={setSenhaCliente} />
+                    {renderPasswordField("c-senha", senhaCliente, setSenhaCliente)}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="c-confirmar">Confirmar senha</Label>
@@ -176,7 +174,7 @@ const Cadastro = () => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="e-senha">Senha</Label>
-                    <PasswordField id="e-senha" value={senhaEstab} onChange={setSenhaEstab} />
+                    {renderPasswordField("e-senha", senhaEstab, setSenhaEstab)}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="e-confirmar">Confirmar senha</Label>
