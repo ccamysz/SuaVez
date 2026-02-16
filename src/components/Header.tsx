@@ -32,6 +32,9 @@ const Header = () => {
           <a href="#contato" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
             Contato
           </a>
+          <Button variant="ghost" size="sm" asChild>
+            <Link to="/cliente">Minha Fila</Link>
+          </Button>
           <Button variant="outline" size="sm" asChild>
             <Link to="/login">Entrar</Link>
           </Button>
@@ -68,11 +71,14 @@ const Header = () => {
               Contato
             </a>
             <div className="mt-2 flex flex-col gap-2">
+              <Button variant="ghost" asChild>
+                <Link to="/cliente" onClick={() => setMobileOpen(false)}>Minha Fila</Link>
+              </Button>
               <Button variant="outline" asChild>
-                <Link to="/login">Entrar</Link>
+                <Link to="/login" onClick={() => setMobileOpen(false)}>Entrar</Link>
               </Button>
               <Button className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
-                <Link to="/cadastro">Cadastrar</Link>
+                <Link to="/cadastro" onClick={() => setMobileOpen(false)}>Cadastrar</Link>
               </Button>
             </div>
           </div>
