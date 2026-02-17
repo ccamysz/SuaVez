@@ -24,9 +24,9 @@ const ClienteDashboard = () => {
   // Account state
   const [editando, setEditando] = useState(false);
   const [dadosCliente, setDadosCliente] = useState({
-    nome: "Carlos Pereira",
-    telefone: "(11) 98765-4321",
-    email: "carlos@email.com",
+    nome: "camyla Vitoria",
+    telefone: "(85) 98765-4321",
+    email: "camyla@email.com",
   });
   const [dadosTemp, setDadosTemp] = useState(dadosCliente);
 
