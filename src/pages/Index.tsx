@@ -226,7 +226,7 @@ const Index = () => {
                 </Badge>
                 <h1 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                   Chega de esperar.{" "}
-                  <span className="text-accent">SuaVez</span> resolve.
+                  <span className="text-accent">SuaVez</span> chegou.
                 </h1>
                 <p className="mt-6 text-lg text-muted-foreground md:text-xl">
                   Sistema completo para eliminar filas presenciais. Seus clientes entram na fila pelo celular e são atendidos com agilidade e organização.
