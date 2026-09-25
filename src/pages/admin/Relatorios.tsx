@@ -106,8 +106,8 @@ const AdminRelatorios = () => {
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={atendimentosPorHora}>
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(76, 20%, 85%)" />
-                <XAxis dataKey="hora" stroke="hsl(113, 9%, 40%)" fontSize={11} tick={{ fontSize: 10 }} />
-                <YAxis stroke="hsl(113, 9%, 40%)" fontSize={11} width={30} />
+                <XAxis dataKey="hora" stroke="hsl(152, 14%, 38%)" fontSize={11} tick={{ fontSize: 10 }} />
+                <YAxis stroke="hsl(152, 14%, 38%)" fontSize={11} width={30} />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: "hsl(0, 0%, 100%)",
@@ -116,7 +116,7 @@ const AdminRelatorios = () => {
                     fontSize: "12px",
                   }}
                 />
-                <Bar dataKey="atendimentos" fill="hsl(113, 9%, 49%)" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="atendimentos" fill="hsl(140, 29%, 51%)" radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -239,8 +239,8 @@ const AdminRelatorios = () => {
                 }))}
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(76, 20%, 85%)" />
-                <XAxis dataKey="nome" stroke="hsl(113, 9%, 40%)" fontSize={11} />
-                <YAxis stroke="hsl(113, 9%, 40%)" fontSize={11} width={30} />
+                <XAxis dataKey="nome" stroke="hsl(152, 14%, 38%)" fontSize={11} />
+                <YAxis stroke="hsl(152, 14%, 38%)" fontSize={11} width={30} />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: "hsl(0, 0%, 100%)",

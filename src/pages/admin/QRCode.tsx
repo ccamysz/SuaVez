@@ -37,7 +37,7 @@ const AdminQRCode = () => {
               value={filaUrl}
               size={220}
               bgColor="transparent"
-              fgColor="hsl(113, 9%, 49%)"
+              fgColor="hsl(152, 40%, 30%)"
               level="H"
             />
           </div>
