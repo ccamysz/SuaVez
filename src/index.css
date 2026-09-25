@@ -9,99 +9,98 @@
 
 @layer base {
   :root {
-    /* SuaVez Palette — Verde fresco + Coral */
-    /* Mint bg: #EAF4EF → 150 31% 94% */
-    /* Light green: #A8D5BA → 144 35% 75% */
-    /* Mid green: #5FA777 → 140 29% 51% */
-    /* Deep green: #2E6B4F → 152 40% 30% */
-    /* Coral: #F49E8C → 10 83% 75% */
+    /* FilaZero Palette */
+    /* Cream: #F1F3E0 → 68 38% 91% */
+    /* Sage: #A1BC98 → 107 23% 67% */
+    /* Light Sage: #D2DCB6 → 76 30% 79% */
+    /* Dark Green: #778873 → 113 9% 49% */
     /* White: #FFFFFF */
 
-    --background: 150 31% 95%;
-    --foreground: 152 45% 16%;
+    --background: 68 38% 96%;
+    --foreground: 113 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 152 45% 16%;
+    --card-foreground: 113 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 152 45% 16%;
+    --popover-foreground: 113 20% 15%;
 
-    --primary: 152 40% 30%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 107 23% 67%;
+    --primary-foreground: 113 20% 15%;
 
-    --secondary: 144 35% 75%;
-    --secondary-foreground: 152 40% 18%;
+    --secondary: 76 30% 79%;
+    --secondary-foreground: 113 20% 15%;
 
-    --muted: 150 28% 90%;
-    --muted-foreground: 152 14% 36%;
+    --muted: 68 38% 91%;
+    --muted-foreground: 113 9% 40%;
 
-    --accent: 11 78% 58%;
+    --accent: 113 9% 49%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 55%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 145 25% 84%;
-    --input: 145 25% 84%;
-    --ring: 140 29% 51%;
+    --border: 76 20% 85%;
+    --input: 76 20% 85%;
+    --ring: 107 23% 67%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 152 45% 16%;
-    --sidebar-primary: 152 40% 30%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 150 28% 92%;
-    --sidebar-accent-foreground: 152 45% 16%;
-    --sidebar-border: 145 25% 84%;
-    --sidebar-ring: 140 29% 51%;
+    --sidebar-foreground: 113 20% 15%;
+    --sidebar-primary: 107 23% 67%;
+    --sidebar-primary-foreground: 113 20% 15%;
+    --sidebar-accent: 68 38% 91%;
+    --sidebar-accent-foreground: 113 20% 15%;
+    --sidebar-border: 76 20% 85%;
+    --sidebar-ring: 107 23% 67%;
 
-    --success: 140 35% 40%;
-    --success-foreground: 0 0% 100%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 152 45% 16%;
+    --success: 107 23% 67%;
+    --success-foreground: 113 20% 15%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 113 20% 15%;
     --font-sans: Poppins, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
     --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
   .dark {
-    --background: 152 30% 8%;
-    --foreground: 150 31% 92%;
+    --background: 113 20% 10%;
+    --foreground: 68 38% 91%;
 
-    --card: 152 25% 12%;
-    --card-foreground: 150 31% 92%;
+    --card: 113 15% 14%;
+    --card-foreground: 68 38% 91%;
 
-    --popover: 152 25% 12%;
-    --popover-foreground: 150 31% 92%;
+    --popover: 113 15% 14%;
+    --popover-foreground: 68 38% 91%;
 
-    --primary: 144 40% 58%;
-    --primary-foreground: 152 45% 10%;
+    --primary: 107 23% 67%;
+    --primary-foreground: 113 20% 10%;
 
-    --secondary: 152 20% 22%;
-    --secondary-foreground: 150 31% 92%;
+    --secondary: 113 9% 25%;
+    --secondary-foreground: 68 38% 91%;
 
-    --muted: 152 18% 17%;
-    --muted-foreground: 145 15% 68%;
+    --muted: 113 9% 20%;
+    --muted-foreground: 76 15% 65%;
 
-    --accent: 11 85% 66%;
-    --accent-foreground: 152 45% 10%;
+    --accent: 76 30% 79%;
+    --accent-foreground: 113 20% 10%;
 
-    --destructive: 0 70% 40%;
-    --destructive-foreground: 150 31% 92%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 68 38% 91%;
 
-    --border: 152 15% 22%;
-    --input: 152 15% 22%;
-    --ring: 144 40% 58%;
+    --border: 113 9% 22%;
+    --input: 113 9% 22%;
+    --ring: 107 23% 67%;
 
-    --sidebar-background: 152 25% 10%;
-    --sidebar-foreground: 150 31% 92%;
-    --sidebar-primary: 144 40% 58%;
-    --sidebar-primary-foreground: 152 45% 10%;
-    --sidebar-accent: 152 18% 17%;
-    --sidebar-accent-foreground: 150 31% 92%;
-    --sidebar-border: 152 15% 22%;
-    --sidebar-ring: 144 40% 58%;
+    --sidebar-background: 113 15% 12%;
+    --sidebar-foreground: 68 38% 91%;
+    --sidebar-primary: 107 23% 67%;
+    --sidebar-primary-foreground: 113 20% 10%;
+    --sidebar-accent: 113 9% 20%;
+    --sidebar-accent-foreground: 68 38% 91%;
+    --sidebar-border: 113 9% 22%;
+    --sidebar-ring: 107 23% 67%;
     --font-sans: Poppins, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
     --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
