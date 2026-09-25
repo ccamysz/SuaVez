@@ -105,13 +105,13 @@ const AdminRelatorios = () => {
           <div className="h-56 sm:h-80">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={atendimentosPorHora}>
-                <CartesianGrid strokeDasharray="3 3" stroke="hsl(76, 20%, 85%)" />
+                <CartesianGrid strokeDasharray="3 3" stroke="hsl(145, 25%, 84%)" />
                 <XAxis dataKey="hora" stroke="hsl(152, 14%, 38%)" fontSize={11} tick={{ fontSize: 10 }} />
                 <YAxis stroke="hsl(152, 14%, 38%)" fontSize={11} width={30} />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: "hsl(0, 0%, 100%)",
-                    border: "1px solid hsl(76, 20%, 85%)",
+                    border: "1px solid hsl(145, 25%, 84%)",
                     borderRadius: "8px",
                     fontSize: "12px",
                   }}
@@ -238,19 +238,19 @@ const AdminRelatorios = () => {
                   meta: tempoMedioGeral,
                 }))}
               >
-                <CartesianGrid strokeDasharray="3 3" stroke="hsl(76, 20%, 85%)" />
+                <CartesianGrid strokeDasharray="3 3" stroke="hsl(145, 25%, 84%)" />
                 <XAxis dataKey="nome" stroke="hsl(152, 14%, 38%)" fontSize={11} />
                 <YAxis stroke="hsl(152, 14%, 38%)" fontSize={11} width={30} />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: "hsl(0, 0%, 100%)",
-                    border: "1px solid hsl(76, 20%, 85%)",
+                    border: "1px solid hsl(145, 25%, 84%)",
                     borderRadius: "8px",
                     fontSize: "12px",
                   }}
                 />
                 <Legend wrapperStyle={{ fontSize: "11px" }} />
-                <Bar dataKey="tempoMedio" name="Tempo Médio" fill="hsl(107, 23%, 67%)" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="tempoMedio" name="Tempo Médio" fill="hsl(11, 78%, 58%)" radius={[4, 4, 0, 0]} />
                 <Bar dataKey="meta" name="Meta" fill="hsl(0, 84%, 60%)" radius={[4, 4, 0, 0]} opacity={0.3} />
               </BarChart>
             </ResponsiveContainer>
