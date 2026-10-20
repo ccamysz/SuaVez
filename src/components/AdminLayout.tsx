@@ -3,6 +3,7 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { LayoutDashboard, ListOrdered, Users, BarChart3, QrCode, LogOut, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "Painel", href: "/admin", icon: LayoutDashboard },
