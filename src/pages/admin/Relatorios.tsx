@@ -110,8 +110,9 @@ const AdminRelatorios = () => {
                 <YAxis stroke="hsl(113, 9%, 40%)" fontSize={11} width={30} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: "hsl(0, 0%, 100%)",
-                    border: "1px solid hsl(76, 20%, 85%)",
+                    backgroundColor: "hsl(var(--card))",
+                    border: "1px solid hsl(var(--border))",
+                    color: "hsl(var(--foreground))",
                     borderRadius: "8px",
                     fontSize: "12px",
                   }}
@@ -243,8 +244,9 @@ const AdminRelatorios = () => {
                 <YAxis stroke="hsl(113, 9%, 40%)" fontSize={11} width={30} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: "hsl(0, 0%, 100%)",
-                    border: "1px solid hsl(76, 20%, 85%)",
+                    backgroundColor: "hsl(var(--card))",
+                    border: "1px solid hsl(var(--border))",
+                    color: "hsl(var(--foreground))",
                     borderRadius: "8px",
                     fontSize: "12px",
                   }}
