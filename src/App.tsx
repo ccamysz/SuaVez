@@ -15,6 +15,7 @@ import AdminAtendentes from "./pages/admin/Atendentes";
 import AdminRelatorios from "./pages/admin/Relatorios";
 import AdminQRCode from "./pages/admin/QRCode";
 import NotFound from "./pages/NotFound";
+import SalesforceChat from "./components/SalesforceChat";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <SalesforceChat />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
