@@ -3,7 +3,6 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { LayoutDashboard, ListOrdered, Users, BarChart3, QrCode, LogOut, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "Painel", href: "/admin", icon: LayoutDashboard },
@@ -117,9 +116,6 @@ const AdminLayout = () => {
           <h1 className="font-display text-lg font-semibold text-foreground">
             Painel Administrativo
           </h1>
-          <div className="ml-auto">
-            <ThemeToggle />
-          </div>
         </header>
 
         <main className="flex-1 p-4 sm:p-6">
