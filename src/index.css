@@ -9,7 +9,7 @@
 
 @layer base {
   :root {
-    /* FilaZero Palette */
+    /* SuaVez: sálvia mais viva, mantendo o fundo claro original */
     /* Cream: #F1F3E0 → 68 38% 91% */
     /* Sage: #A1BC98 → 107 23% 67% */
     /* Light Sage: #D2DCB6 → 76 30% 79% */
@@ -25,37 +25,37 @@
     --popover: 0 0% 100%;
     --popover-foreground: 113 20% 15%;
 
-    --primary: 107 23% 67%;
+    --primary: 107 32% 62%;
     --primary-foreground: 113 20% 15%;
 
-    --secondary: 76 30% 79%;
+    --secondary: 76 40% 76%;
     --secondary-foreground: 113 20% 15%;
 
     --muted: 68 38% 91%;
     --muted-foreground: 113 9% 40%;
 
-    --accent: 113 9% 49%;
+    --accent: 113 25% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 76 20% 85%;
-    --input: 76 20% 85%;
-    --ring: 107 23% 67%;
+    --border: 76 26% 80%;
+    --input: 76 26% 80%;
+    --ring: 113 25% 35%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 113 20% 15%;
-    --sidebar-primary: 107 23% 67%;
+    --sidebar-primary: 107 32% 62%;
     --sidebar-primary-foreground: 113 20% 15%;
-    --sidebar-accent: 68 38% 91%;
+    --sidebar-accent: 76 40% 88%;
     --sidebar-accent-foreground: 113 20% 15%;
-    --sidebar-border: 76 20% 85%;
-    --sidebar-ring: 107 23% 67%;
+    --sidebar-border: 76 26% 80%;
+    --sidebar-ring: 113 25% 35%;
 
-    --success: 107 23% 67%;
+    --success: 107 32% 62%;
     --success-foreground: 113 20% 15%;
     --warning: 45 93% 47%;
     --warning-foreground: 113 20% 15%;

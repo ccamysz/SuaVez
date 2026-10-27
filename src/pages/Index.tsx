@@ -285,7 +285,7 @@ const Index = () => {
                   }`}
                   style={{ transitionDelay: servicesRef.isVisible ? `${i * 100}ms` : '0ms' }}
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/20 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-secondary text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
                     <s.icon className="h-6 w-6" />
                   </div>
                   <div>
@@ -356,7 +356,7 @@ const Index = () => {
                   style={{ transitionDelay: featuresRef.isVisible ? `${i * 100}ms` : '0ms' }}
                 >
                   <CardContent className="p-6">
-                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-accent transition-all group-hover:bg-accent group-hover:text-accent-foreground group-hover:scale-110">
+                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-accent transition-all group-hover:bg-accent group-hover:text-accent-foreground group-hover:scale-110">
                       <f.icon className="h-6 w-6" />
                     </div>
                     <h3 className="font-display text-lg font-semibold text-foreground">{f.title}</h3>
@@ -460,7 +460,7 @@ const Index = () => {
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10 px-8 text-base" asChild>
+                <Button size="lg" variant="outline" className="border-accent-foreground/70 bg-transparent text-accent-foreground hover:bg-accent-foreground hover:text-accent focus-visible:ring-accent-foreground focus-visible:ring-offset-accent px-8 text-base" asChild>
                   <Link to="/cliente">Ver Demo</Link>
                 </Button>
               </div>
