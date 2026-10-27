@@ -64,56 +64,11 @@
     --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
-  .dark {
-    --background: 113 20% 10%;
-    --foreground: 68 38% 91%;
-
-    --card: 113 15% 14%;
-    --card-foreground: 68 38% 91%;
-
-    --popover: 113 15% 14%;
-    --popover-foreground: 68 38% 91%;
-
-    --primary: 107 23% 67%;
-    --primary-foreground: 113 20% 10%;
-
-    --secondary: 113 9% 25%;
-    --secondary-foreground: 68 38% 91%;
-
-    --muted: 113 9% 20%;
-    --muted-foreground: 76 15% 65%;
-
-    --accent: 76 30% 79%;
-    --accent-foreground: 113 20% 10%;
-
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 68 38% 91%;
-
-    --border: 113 9% 22%;
-    --input: 113 9% 22%;
-    --ring: 107 23% 67%;
-
-    --sidebar-background: 113 15% 12%;
-    --sidebar-foreground: 68 38% 91%;
-    --sidebar-primary: 107 23% 67%;
-    --sidebar-primary-foreground: 113 20% 10%;
-    --sidebar-accent: 113 9% 20%;
-    --sidebar-accent-foreground: 68 38% 91%;
-    --sidebar-border: 113 9% 22%;
-    --sidebar-ring: 107 23% 67%;
-    --font-sans: Poppins, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
-    --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  }
 }
 
 @layer base {
   :root {
     color-scheme: light;
-  }
-
-  .dark {
-    color-scheme: dark;
   }
 
   * {
@@ -129,7 +84,7 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
-  /* Gráficos adaptam-se ao tema claro/escuro via tokens */
+  /* Gráficos usam os tokens de cor do tema claro */
   .recharts-cartesian-grid line {
     stroke: hsl(var(--border));
   }
