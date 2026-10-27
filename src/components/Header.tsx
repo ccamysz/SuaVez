@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo-suavez.png";
-import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -41,12 +40,10 @@ const Header = () => {
           <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
             <Link to="/cadastro">Cadastrar</Link>
           </Button>
-          <ThemeToggle />
         </nav>
 
         {/* Mobile: theme toggle + menu */}
         <div className="flex items-center gap-1 md:hidden">
-          <ThemeToggle />
           <button
             className="p-2 text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
